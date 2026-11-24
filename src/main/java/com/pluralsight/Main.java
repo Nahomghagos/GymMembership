@@ -147,6 +147,11 @@ public class Main {
             contracts = contracts.add(membership.getContractTotal());
             print(membership);
         }
+        System.out.println(" === Totals === ");
+        System.out.println("Memberships " + memberships.size());
+        System.out.println("Monthly income: $" + income);
+        System.out.println("All contracts: $" + contracts);
+
     }public static void print(Membership membership) {
         System.out.println("  Monthly price $" +
                 membership.getMonthlyPrice() +
