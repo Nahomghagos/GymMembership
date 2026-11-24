@@ -36,6 +36,28 @@ public class Main {
                         bob.getMonthlyPrice() +
                         " per month"
         );
+        PremiumMembership carol = new PremiumMembership("Carol White", 12, new BigDecimal("30.00"),
+                2);
+
+        PremiumMembership frank = new PremiumMembership("Frank Miller", 3, new BigDecimal("30.00"),
+                0);
+
+        System.out.println(carol.getMemberName() +
+                ", " +
+                carol.getMonths() +
+                " months, $" +
+                carol.getMonthlyPrice() +
+                " per month, guest passes left " +
+                carol.getGuestPasses()
+        );
+        System.out.println(frank.getMemberName() +
+                ", " +
+                frank.getMonths() +
+                " months, $" +
+                frank.getMonthlyPrice() +
+                " per month, guest passes left  " +
+                frank.getGuestPasses()
+        );
 
 
     }
