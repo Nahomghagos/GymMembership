@@ -58,6 +58,33 @@ public class Main {
                 " per month, guest passes left  " +
                 frank.getGuestPasses()
         );
+        FamilyMembership grace = new FamilyMembership("Grace Lee", 12, new BigDecimal("30.00"),
+                3
+        );
+
+        FamilyMembership emma = new FamilyMembership("Emma Wilson", 6, new BigDecimal("30.00"),
+                1
+        );
+        System.out.println(grace.getMemberName() +
+                ", " +
+                grace.getMonths() +
+                " months, $" +
+                grace.getMonthlyPrice() +
+                " with " +
+                grace.getExtraMembers()+
+                " extra members per month"
+        );
+        System.out.println(emma.getMemberName() +
+                ", " +
+                emma.getMonths() +
+                " months, $" +
+                emma.getMonthlyPrice() +
+                " with " +
+                emma.getExtraMembers() +
+                " extra members per month"
+        );
+
+
 
 
     }
