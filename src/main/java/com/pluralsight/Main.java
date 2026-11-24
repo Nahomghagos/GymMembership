@@ -1,10 +1,12 @@
 package com.pluralsight;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println(" === GymMemberships === ");
+
 
         Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00")
         );
@@ -14,7 +16,8 @@ public class Main {
                 " months, $" +
                 henry.getMonthlyPrice() +
                 " per month");*/
-        System.out.println(henry);
+
+        //System.out.println(henry);
 
         BasicMembership alice = new BasicMembership("Alice Johnson", 6, new BigDecimal("30.00"),
                 true
@@ -30,7 +33,7 @@ public class Main {
                         alice.getMonthlyPrice() +
                         " per month"
         );*/
-        System.out.println(alice);
+       // System.out.println(alice);
 
         /*System.out.println(bob.getMemberName() +
                         ", " +
@@ -39,7 +42,7 @@ public class Main {
                         bob.getMonthlyPrice() +
                         " per month"
         );*/
-        System.out.println(bob);
+       // System.out.println(bob);
 
         PremiumMembership carol = new PremiumMembership("Carol White", 12, new BigDecimal("30.00"),
                 2);
@@ -55,7 +58,7 @@ public class Main {
                 " per month, guest passes left " +
                 carol.getGuestPasses()
         );*/
-        System.out.println(carol);
+       // System.out.println(carol);
 
         /*System.out.println(frank.getMemberName() +
                 ", " +
@@ -65,7 +68,7 @@ public class Main {
                 " per month, guest passes left  " +
                 frank.getGuestPasses()
         );*/
-        System.out.println(frank);
+       // System.out.println(frank);
 
         FamilyMembership grace = new FamilyMembership("Grace Lee", 12, new BigDecimal("30.00"),
                 3
@@ -83,7 +86,7 @@ public class Main {
                 grace.getExtraMembers()+
                 " extra members per month"
         );*/
-        System.out.println(grace);
+       // System.out.println(grace);
 
       /*  System.out.println(emma.getMemberName() +
                 ", " +
@@ -94,8 +97,8 @@ public class Main {
                 emma.getExtraMembers() +
                 " extra members per month"
         );*/
-        System.out.println(emma);
-
+       // System.out.println(emma);
+/*
         System.out.println();
         System.out.println(" === Sign-up fee and contract total === ");
         System.out.println();
@@ -125,11 +128,32 @@ public class Main {
                         grace.getSignUpFee() +
                         ", total $" +
                         grace.getContractTotal()
+        );*/
+        ArrayList<Membership> memberships = new ArrayList<>();
+
+        memberships.add(henry);
+        memberships.add(alice);
+        memberships.add(bob);
+        memberships.add(carol);
+        memberships.add(frank);
+        memberships.add(grace);
+        memberships.add(emma);
+
+        BigDecimal income = new BigDecimal("0.00");
+        BigDecimal contracts = new BigDecimal("0.00");
+
+        for (Membership membership : memberships) {
+            income = income.add(membership.getMonthlyPrice());
+            contracts = contracts.add(membership.getContractTotal());
+            print(membership);
+        }
+    }public static void print(Membership membership) {
+        System.out.println("  Monthly price $" +
+                membership.getMonthlyPrice() +
+                ", signup fee  $" +
+                membership.getSignUpFee() +
+                ", contract total $" +
+                membership.getContractTotal()
         );
-
-
-
-
-
     }
 }
