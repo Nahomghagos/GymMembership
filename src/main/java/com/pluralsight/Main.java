@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(" === GymMemberships === ");
 
-
-       // Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00"));
+        //java: abstract methods cannot have a body
+        //Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00"));
        /* System.out.println(henry.getMemberName()
                 + ", " +
                 henry.getMonths() +
