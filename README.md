@@ -1,21 +1,37 @@
-   # Online Store
+   # Gym Membership
+A project that demonstrates inheritance, method overriding, polymorphism, abstract classes, and abstract methods
 
 <!-- HOW TO USE THIS TEMPLATE
      Save it as README.md at the root of your project, next to pom.xml. Replace every comment like this one
      with your own text; comments do not show on GitHub, so what you leave untouched shows as an empty heading.
-     Two sections are optional and say so: Class Diagram, and Data and configuration. When your project does not
+     Two sections are optional and say so: Class 
 
 <!-- One sentence under the title: what the app is, for whom.
      Example: A console app that keeps a store's inventory in a csv file and lets a clerk search it. -->
 
 ## Description of the Project
+Thisis about a gym that sells three kinds of memberships:
+
+Basic membership — may be off peak only and receives a discount when applicable.
+
+Premium membership — includes guest passes and receives a waived sign-up fee for contracts of 12 months or longer.
+
+Family membership — charges extra for additional family members and applies a discount when there are at least three extra members.
+
+it calculates each member's monthly price, sign up fee, and contract . 
+It also demonstrates front desk work like using guest passes, printing keycard counts.
+
+
 
 
 
 ## Features
-
-## User Stories
-
+* Calculates sign up fees and complete contract.
+* Uses BigDecimal for all price values and calculations.
+* Demonstrates inheritance and method overriding.
+* Manages premium guest passes and displays remaining passes.
+* Calculates the number of family key cards required.
+* Includes a UML class diagram showing the relationships between the membership classes.
 
 
 ## Setup
@@ -87,4 +103,4 @@ Nahom Hagos
 
 
 ## Thanks
-
+Raymond for making the steps on the project 
