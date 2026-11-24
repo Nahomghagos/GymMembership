@@ -51,4 +51,9 @@ public class Membership {
         return price;
     }
 
+    @Override
+    public String toString() {
+        return "Membership | " + getMemberName() + " | " + getMonths() + " months";
+    }
+
 }

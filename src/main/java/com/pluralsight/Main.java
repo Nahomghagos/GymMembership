@@ -8,12 +8,13 @@ public class Main {
 
         Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00")
         );
-        System.out.println(henry.getMemberName()
+       /* System.out.println(henry.getMemberName()
                 + ", " +
                 henry.getMonths() +
                 " months, $" +
                 henry.getMonthlyPrice() +
-                " per month");
+                " per month");*/
+        System.out.println(henry);
 
         BasicMembership alice = new BasicMembership("Alice Johnson", 6, new BigDecimal("30.00"),
                 true
@@ -22,42 +23,50 @@ public class Main {
         BasicMembership bob = new BasicMembership("Bob Smith", 2, new BigDecimal("27.50"),
                 false
         );
-        System.out.println(alice.getMemberName() +
+       /* System.out.println(alice.getMemberName() +
                         ", " +
                         alice.getMonths() +
                         " months, $" +
                         alice.getMonthlyPrice() +
                         " per month"
-        );
-        System.out.println(bob.getMemberName() +
+        );*/
+        System.out.println(alice);
+
+        /*System.out.println(bob.getMemberName() +
                         ", " +
                         bob.getMonths() +
                         " months, $" +
                         bob.getMonthlyPrice() +
                         " per month"
-        );
+        );*/
+        System.out.println(bob);
+
         PremiumMembership carol = new PremiumMembership("Carol White", 12, new BigDecimal("30.00"),
                 2);
 
         PremiumMembership frank = new PremiumMembership("Frank Miller", 3, new BigDecimal("30.00"),
                 0);
 
-        System.out.println(carol.getMemberName() +
+       /* System.out.println(carol.getMemberName() +
                 ", " +
                 carol.getMonths() +
                 " months, $" +
                 carol.getMonthlyPrice() +
                 " per month, guest passes left " +
                 carol.getGuestPasses()
-        );
-        System.out.println(frank.getMemberName() +
+        );*/
+        System.out.println(carol);
+
+        /*System.out.println(frank.getMemberName() +
                 ", " +
                 frank.getMonths() +
                 " months, $" +
                 frank.getMonthlyPrice() +
                 " per month, guest passes left  " +
                 frank.getGuestPasses()
-        );
+        );*/
+        System.out.println(frank);
+
         FamilyMembership grace = new FamilyMembership("Grace Lee", 12, new BigDecimal("30.00"),
                 3
         );
@@ -65,7 +74,7 @@ public class Main {
         FamilyMembership emma = new FamilyMembership("Emma Wilson", 6, new BigDecimal("30.00"),
                 1
         );
-        System.out.println(grace.getMemberName() +
+       /* System.out.println(grace.getMemberName() +
                 ", " +
                 grace.getMonths() +
                 " months, $" +
@@ -73,8 +82,10 @@ public class Main {
                 " with " +
                 grace.getExtraMembers()+
                 " extra members per month"
-        );
-        System.out.println(emma.getMemberName() +
+        );*/
+        System.out.println(grace);
+
+      /*  System.out.println(emma.getMemberName() +
                 ", " +
                 emma.getMonths() +
                 " months, $" +
@@ -82,7 +93,9 @@ public class Main {
                 " with " +
                 emma.getExtraMembers() +
                 " extra members per month"
-        );
+        );*/
+        System.out.println(emma);
+
         System.out.println();
         System.out.println(" === Sign-up fee and contract total === ");
         System.out.println();

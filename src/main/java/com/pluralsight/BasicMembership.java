@@ -19,6 +19,12 @@ public class BasicMembership extends Membership {
     }
 
     @Override
+    public String toString() {
+        return "Basic | " + getMemberName() + " | " + getMonths() + " months | off-peak only: " + offPeakOnly;
+    }
+
+
+    @Override
     public BigDecimal getMonthlyPrice() {
         BigDecimal price = getBaseRate();
         if (offPeakOnly) {

@@ -32,6 +32,13 @@ public class PremiumMembership extends Membership {
             System.out.println(getMemberName() + "has no more guest passes ");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Premium | " + getMemberName() + " | " + getMonths() + " months | guest passes: " + guestPasses;
+    }
+
+
     @Override
     public BigDecimal getSignUpFee() {
         if (getMonths() >= 12) {
