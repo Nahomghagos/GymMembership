@@ -32,5 +32,16 @@ public class PremiumMembership extends Membership {
             System.out.println(getMemberName() + "has no more guest passes ");
         }
     }
+    @Override
+    public BigDecimal getSignUpFee() {
+        if (getMonths() >= 12) {
+            BigDecimal yearPrice = new BigDecimal("0");
+            return yearPrice;
+        }else {
+            BigDecimal originalPrice = new BigDecimal("49.00");
+            return originalPrice;
+        }
+    }
+
 
 }
