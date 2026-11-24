@@ -172,7 +172,14 @@ public class Main {
 
                 System.out.println(family.getMemberName() + "  print " + keyCards + " key cards");
             }
+
         }
+        System.out.println("--- Kinds ---");
+
+        for (Membership membership : memberships) {
+            System.out.println(membership.getMemberName() + ": " + membership.getClass().getSimpleName());
+        }
+
 
     }public static void print(Membership membership) {
         System.out.println("  Monthly price $" +
