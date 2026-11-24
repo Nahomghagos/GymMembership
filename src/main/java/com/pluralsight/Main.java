@@ -83,6 +83,37 @@ public class Main {
                 emma.getExtraMembers() +
                 " extra members per month"
         );
+        System.out.println();
+        System.out.println(" === Sign-up fee and contract total === ");
+        System.out.println();
+
+        System.out.println(henry.getMemberName() +
+                " fee $" +
+                henry.getSignUpFee() +
+                ", total $" +
+                henry.getContractTotal()
+        );
+        System.out.println(carol.getMemberName() +
+                        " fee $" +
+                        carol.getSignUpFee() +
+                        ", total $" +
+                        carol.getContractTotal()
+        );
+
+        System.out.println(frank.getMemberName() +
+                        " fee $" +
+                        frank.getSignUpFee() +
+                        ", total $" +
+                        frank.getContractTotal()
+        );
+
+        System.out.println(grace.getMemberName() +
+                        " fee $" +
+                        grace.getSignUpFee() +
+                        ", total $" +
+                        grace.getContractTotal()
+        );
+
 
 
 
