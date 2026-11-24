@@ -8,8 +8,7 @@ public class Main {
         System.out.println(" === GymMemberships === ");
 
 
-        Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00")
-        );
+       // Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00"));
        /* System.out.println(henry.getMemberName()
                 + ", " +
                 henry.getMonths() +
@@ -131,7 +130,7 @@ public class Main {
         );*/
         ArrayList<Membership> memberships = new ArrayList<>();
 
-        memberships.add(henry);
+       // memberships.add(henry);
         memberships.add(alice);
         memberships.add(bob);
         memberships.add(carol);
